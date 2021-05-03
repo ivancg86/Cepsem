@@ -1,0 +1,31 @@
+.formacio {
+
+    &-video {
+        h2 {
+            font-size: 27px;
+            font-weight: 700;
+            color: $c_blue;
+            border-bottom: 5px solid $c_lighter_blue;
+            padding-bottom: 8px;
+            margin-bottom: 32px;
+        }
+
+        video {
+            border-radius: 2px;
+            width: 70%;
+            position: relative;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            outline: none;
+        }
+    }
+
+    &-body {
+        margin: 32px;
+        background-color: whitesmoke;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 24px;
+    }
+}

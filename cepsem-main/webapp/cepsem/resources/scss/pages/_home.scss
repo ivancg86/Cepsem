@@ -1,0 +1,83 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+
+    &-header {
+        display: flex;
+        padding: 32px;
+
+        h1{
+            font-weight: 800;
+            font-size: 52px;
+        }
+
+        &__img{
+            width: 100%;
+            height: 100%;
+            background-image: url("../assets/img/cecos/cecos5.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &-body {
+        flex: 1;
+        height: 100%;
+        // display: grid;
+        // grid-template: 1fr / 1fr 1fr;
+
+        // @include media-breakpoint-down(sm){
+        //     grid-template: 1fr / 1fr;
+        // }
+    }
+
+    &-option {
+        height: 100%;
+        width: 100%;
+        padding: 48px;
+        position: relative;
+
+        h2 {
+            font-size: 38px;
+            line-height: 1.2;
+            max-width: 400px;
+            width: 100%;
+
+            @include media-breakpoint-down(sm){
+                font-size: 20px;
+            }
+        }
+
+        img{
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            width: 500px;
+
+        }
+
+        &__cecos {
+            background-color: $c_light_blue;
+            // background-image: url("../assets/img/cecos/cecos1.jpg");
+            // background-position: 90% 90%;
+            // background-repeat: no-repeat;
+            // background-size: 300px 200px;
+        }
+
+        &__rm {
+            background-color: $c_light_pink;
+        }
+        &__formacio{
+
+            background-color: $c_yellow;
+        }
+
+        @include media-breakpoint-down(sm){
+            padding: 24px;
+        }
+    }
+}

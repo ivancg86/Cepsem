@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: bolder;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+$font_Inter: "Inter",
+sans-serif;
+$font_Roboto: "Roboto",
+sans-serif;
+
+
+$c_red: #ff2e2e;
+$c_blue: #11AEBF;
+$c_pink: #D91480;
+$c_yellow: rgb(253, 198, 24, 0.55);
+$c_text: #353535;
+$c_light_blue:rgb(17, 174, 191, 0.6);
+$c_light_pink: rgb(217, 20, 128, 0.6);
+$c_lighter_blue:rgb(17, 174, 191, 0.3);
+$c_lighter_pink:rgb(217, 20, 128, 0.3);
+$c_lightest_blue:rgb(17, 174, 191, 0.15);
+$c_lightest_pink:rgb(217, 20, 128, 0.15);
+
+
+:root {
+    --text: #{$c_text};
+    --blue: #{$c_blue};
+    --pink: #{$c_pink};
+    --lighter-blue: #{$c_lighter_blue};
+    --lighter-pink: #{$c_lighter_pink};
+    --lightest-blue: #{$c_lightest_blue};
+    --lightest-pink: #{$c_lightest_pink};
+}

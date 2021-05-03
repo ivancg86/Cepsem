@@ -1,0 +1,65 @@
+.button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 16px 26px;
+    transition: all ease 0.2s;
+
+    &--blue {
+        background-color: $c_blue;
+    }
+
+    &--pink {
+        background-color: $c_pink;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &-icon {
+        background-size: 25px;
+        background-position: 16px 53%;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+    }
+
+    &-inverted {
+        background-color: white;
+        border: 1px solid #b3b3b3;
+        color: $c_blue;
+
+        &:hover {
+            background-color: $c_blue;
+            color: white;
+        }
+
+        &--red {
+            color: $c_red;
+            background-image: url('../assets/icons/close_red.svg');
+
+            &:hover {
+                background-color: $c_red;
+                background-image: url('../assets/icons/close_white.svg');
+            }
+        }
+    }
+
+    &--rounded {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 24px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    span{
+        color: white;
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.75;
+    }
+}

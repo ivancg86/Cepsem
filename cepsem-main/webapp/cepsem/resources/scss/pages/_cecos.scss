@@ -1,0 +1,24 @@
+.cecos {
+    padding-top: 30px;
+    padding-bottom: 200px;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('../assets/img/cecos/cecos1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+
+    @include media-breakpoint-down(lg) {
+        overflow-y: auto;
+    }
+
+    .cepsem-card {
+        background-color: white;
+
+        &--scale {
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+
+    }
+}
